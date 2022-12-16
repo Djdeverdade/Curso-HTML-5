@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAGS 1</title>
+
+    <style>
+        #ImagemGoogle {
+            width: 250px;
+            height: 150px;
+        }
+        .vermelho {
+            font-size: 24px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tags</h1>
+    <hr>
+    <h2>
+        Strong and Bold
+    </h2>
+        <p>A tag <b>Bold</b> é usada para mudar a forma do texto para negrito apenas mudando seu estado físico.</p>
+        <p>Já a tag <strong>Strong</strong> é utilizada para enfatizar algo semanticamente</p>
+    <h2>I e EM </h2>
+        <p><i>tag "i"</i> forma<br>
+        <em>tag "em"</em> Semantica
+    <h2>Del e ins</h2>
+        <p>Del <del>risca</del>, deleta (semantica) uma palavra/frase</p>
+        <p>Ins <ins>sublinha</ins>, insere (semantica) uma palavra/frase.</p>
+    <h2>Small, Sub e Sup</h2>
+        <p>Small exibe caracteres menores, como letras "<small>a</small>" e numeros "<small>1</small>".</p>
+        <p>Sub exibe caracteres axaibo como no número 2 da formula da água, dessa forma: H<sub>2</sub>0</p>
+        <p>Sup exibe caracteres acima como números exponenciais, dessa forma 24<sup>3</sup></p>
+    <h2>br, q, blockquote e hr</h2>
+        <p>Br é a tag que quebra linhas <br>dessa forma</p>
+        <p>Q é a tag usada para fazer citações no texto, dessa forma: <br>
+        <q cite="https://www.hostinger.com.br/tutoriais/o-que-e-site">Site é uma coleção de páginas da web organizadas e localizadas em um servidor na rede.</q>
+        </p>
+        <p>hr é a tag utilizada para fazer uma linha de separação na tela. Dessa forma:</p>
+        <hr>
+        <p>Bloqckquote é a tag usada para fazer bloco de citação, como a do exemplo: </p>
+        <blockquote cite="https://www.pensador.com/frases_de_chico_xavier/">Não exijas dos outros qualidades que ainda não possuem.</blockquote>
+        <p>Códigos são com a tag "code" e a tag "pre" para formatar o texto como está escrito.</p>
+        <pre><code>#include 
+#include
+#include 
+
+using namespace std::views;
+
+double f(double t)
+{
+    return sqrt(abs(t)) + 5 * pow(t, 3);
+}
+
+int main()
+{
+    double a[11];
+    for (auto& t : a)
+        std::cin >> t;
+
+    for (int i : iota(0, 11) | reverse) {
+    }
+}</code>
+        </pre>
+    <h2>hyperlinks</h2>
+        <p>Agora vamos fazer um link usando o comando "a". <br>
+            clique neste <a href="https://www.google.com.br/" target="_blank"> link</a> para ser redirecionado para a pagina do google.
+    <h2>Inserindo imagens com hyperlink</h2>
+        <p>
+            <a href="https://www.google.com.br/" target="_blank">
+                <img id="ImagemGoogle" src="https://1000logos.net/wp-content/uploads/2016/11/google-logo.jpg" alt="logo do google escrito google ao lado.">
+            </a>
+        </p>
+        <p>É melhor escolher o tamanho com CSS.</p>
+    <h2>span e div</h2>
+        <p>A tag span é um container genérico em linha para conteúdo <br> <span class="vermelho">isso está em vermelho</span>, ou também <span class="vermelho">isso</span> está em vermelho.</p>
+        <p>A tag div também é um container generico, porém é display block, usa um bloco inteiro na tela. <br>
+        <div class="vermelho"> Eu sou um bloco</div> mas eu estou na mesma linha</p>
+</body>
+</html>
