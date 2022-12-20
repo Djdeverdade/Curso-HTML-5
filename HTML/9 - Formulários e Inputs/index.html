@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários e Inputs</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        body fieldset {
+            width: 100px;
+        }
+        body input {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get" target="_blank">
+        <h1>O Site</h1>
+        <p>Para entrar no site, por favor, cadastre-se</p>
+        <fieldset>
+            <legend>Novo usuário</legend>
+            <p>
+                <input type="text" name="nome" id="Nome" placeholder="Nome">
+                <input type="text" name="sobrenome" id="Sobrenome" placeholder="Sobrenome">
+                <input type="text" name="CPF" id="CPF" placeholder="CPF">
+                <input type="password" name="senha" id="senha" placeholder="Senha">
+                <input type="password" name="confirmasenha" id="confirmasenha" placeholder="Confirmar Senha">
+            </p>
+            <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </p>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
